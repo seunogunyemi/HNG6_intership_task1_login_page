@@ -3,7 +3,8 @@ body	{		font-family:
 				width: 100%;
 				height: auto;
 				background-color: #E5E5E5;
-				border: 1px solid #E5E5E5;
+				background-image: url('https://images.pexels.com/photos/2469122/pexels-photo-2469122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+				/*border: 1px solid #E5E5E5;*/
 }
 .framework		{
 					width: 50%;
@@ -12,6 +13,7 @@ body	{		font-family:
 					margin-top: 120px;
 					display: block;
 					background-color: #FFFFFF;
+					background-image: url('https://images.pexels.com/photos/1420709/pexels-photo-1420709.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
 					border-radius: 3px;
 					border: 2px solid grey;
 					box-shadow: 0px 2px 2px 0px;
@@ -46,9 +48,10 @@ button			{
 					border-color: #376CBB;
 }
 
-button :hover :focus		{
+button 			{
 						width: 150px;
 						height: 60px;
+						color: white;
 }
 
 table			{
@@ -56,7 +59,7 @@ table			{
 					width: 461px;
 					margin-left: auto;
 					margin-right: auto;
-					margin-bottom: 9px;
+					margin-bottom: 25px;
 }
 
 .flush_left			{
