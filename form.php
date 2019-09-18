@@ -5,11 +5,19 @@
 </head>
 <body>
 	<h1>Welcome to Greatness</h1>
-Your name is:<?php
-echo $_POST["name"]; ?><br>
 
-Your Email address is:<?php
-echo $_POST["email address"];
+
+<?php
+$email = ["name@gmail.com", "gmail@gmail.com", "yahoo@yahoo.com"];
+$password = ["password", "pass", "word"];
+
+if (isset($username) && isset($password) == true) {
+	header("location: success.php");
+}
+
+if (isset($username) && isset($password) ==false) {
+		header("location: index.html");
+}
 
 ?>
 </body>
