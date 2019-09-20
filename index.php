@@ -9,9 +9,9 @@
 <body>
 
 	<div class="framework">
-		<form action="login.php" method="POST">
+		<form action="index.php" method="POST">
 		<img src="team_greatness.png">
-		<input class="email" type="email" name="email" placeholder=" email address..." required>
+		<input class="name" type="name" name="name" placeholder=" username" required>
 <br>
 		<input class="email" style=" " type="password" name="password" placeholder=" enter password" required>
 <br>
@@ -30,4 +30,18 @@
 
 
 </body>
+<?php
+				if (isset($_POST['submit'])) {
+					$name = $_POST['name'];
+					$password = $_POST['password'];
+				}
+				if ($name=='name' && $password=='password') {
+					header("location: welcome.php");
+					exit();
+				}
+				else
+					echo "username or password invalid";
+
+
+	?>
 </html>
